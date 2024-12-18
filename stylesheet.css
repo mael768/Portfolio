@@ -1,0 +1,123 @@
+
+/* Style des onglets */
+.tab {
+  overflow: hidden;
+  border: 1px solid #477780;
+  background-color: #4385b1;
+  display: flex;
+  justify-content: center; /* Espacement entre les onglets */
+  padding: 2px;
+}
+
+/* Style des liens des onglets */
+.tab a {
+  float: left;
+  display: block;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0 5px; /* Espacement entre les onglets */
+  text-decoration: none;
+  transition: 1s;
+  border-radius: 10px; /* Ajoutez cette ligne pour arrondir les coins */
+}
+
+/* Change la couleur de fond des onglets lorsqu'on passe la souris dessus */
+.tab a:hover {
+  background-color: #4385b1;
+  color:#ffffff;
+
+}
+
+/* Applique un style différrent à l'onglet actif */
+.tabcontent {
+  display: none;
+  padding-left: 80px;
+  padding-right: 80px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Style du contenu de l'onglet actif */
+.active {
+  display: block;
+  background-color: #ffffff;
+}
+
+/* Style de la jauge */
+.progress-bar-container {
+  width: 70%;
+  background-color: #fcfcfc;
+  border:1px solid black;
+  border-radius: 150px;
+  margin-top: 10px; /* Espace en haut de la jauge */
+  margin-left: 300px;
+  margin-right: 300px;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #10a802;
+  border-radius: 10px;
+  border-top: 50px;
+  width: 0; /* La largeur sera mise &agrave; jour via le style inline ou JavaScript */
+  transition: width 1s; /* Effet de transition */
+}
+/* Style du cadre photo */
+.photo-frame {
+  border: 10px solid #4385b1; /* Couleur du cadre (bleu dans notre exemple) */
+  border-radius: 15px; /* Coins arrondis */
+  width: 150px;
+  height: 225px; /* Centrage horizontalement avec une marge en haut */
+  float: right;
+  margin-left: 20px;
+}
+
+/* Style de l'image &agrave; l'int&#233;rieur du cadre */
+.photo-frame img {
+  display: block; /* Supprime la marge en bas de l'image */
+  float: right;
+  margin-left:20px;
+
+}
+p {
+  font-size: 18px;
+}
+/* Style des titres de section */
+h3 {
+  border: 1px solid #ccc;
+  background-color: #4385b1;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+  color:#ecf0f1
+}
+
+h2 {
+  font-size: 24px;
+}
+
+body {
+  background-color:#ecf0f1; /* Blanc */
+  font-family: 'Montserrat', sans-serif; /* Utilise la police Montserrat */
+  font-size: 20px;
+  margin: 0; /* Supprime les marges par d&#233;faut du corps de la page */
+  color:#494949;
+  margin: 1px ;
+
+}
+h4{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;  
+
+}
